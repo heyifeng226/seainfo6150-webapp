@@ -9,9 +9,11 @@ const ArticleList = (props) => {
   if (props.articles.length) {
     displayContent = (
       <ul className={styles.container}>
+        <div className={styles.grid_style}>
         {props.articles.map((article) => (
           <ArticleListItem article={article} key={article.slug} />
         ))}
+        </div>
       </ul>
     );
   } else {

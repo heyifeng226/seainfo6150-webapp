@@ -7,4 +7,10 @@
     list-style-type: none;
     padding: 15px;
   }
-  
+
+.grid_style {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:20px;
+}
+
